@@ -1,5 +1,7 @@
 import Layout from '@components/Layout'
 import PostList from '@components/PostList'
+import SRComponent from '@components/SRComponent'
+
 
 import getPosts from '@utils/getPosts'
 
@@ -15,6 +17,8 @@ const Index = ({ posts, title, description, ...props }) => {
         </p>
         <main>
           <PostList posts={posts} />
+
+          <SRComponent/>
         </main>
         <p>
           You can look at the repository for this project{' '}
